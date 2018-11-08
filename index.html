@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5js</title>
+</head>
+<body>
+  <div class="container">
+    <!--vérifier ce qui est commun à chaques images.-->
+      <!--puis on cré une fonction appelée par onmouseover-->
+        <!--le point commun des liens = img/    "id"    _2.jpg          -->
+      <!--  dans la fonction on appelle la variable qui change a chaque fois  ce qui donne onmouseover="zap"(id)-->
+    <img src="img/image1.jpg" id="image1" onmouseover="zap(id)" />
+    <img src="img/image2.jpg" id="image2" onmouseover="zap(id)" />
+    <img src="img/image3.jpg" id="image3" onmouseover="zap(id)" />
+    <img src="img/image4.jpg" id="image4" onmouseover="zap(id)" />
+    <img src="img/image5.jpg" id="image5" onmouseover="zap(id)" />
+  </div>
+  <script type="text/javascript">
+  function zap(changementImage){
+    // on concatenne la source de l image.et on appele dedans la valeur de l id
+     document.getElementById(changementImage).src = 'img/'+ changementImage+ '_2.jpg';
+   }
+  </script>
+</body>
+</html> 
